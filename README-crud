@@ -1,0 +1,52 @@
+
+
+Crud v1. for kohana-3.2.0 framework
+
+includes:
+	~ jquery-1.5.1.min
+	~ jquery-ui.min
+
+requirements:
+	~ simplex-admin
+
+	0.Intro
+
+	Crud jest stworzony na potrzeby frameworka kohana w wersji 3.2.0 oraz projektow wewnetrznych jak i zewnetrznych.
+	
+	1. Instalacja
+		
+	Crud wymaga plikow home.php oraz admin/home.php. 
+	a) wymagane jest ustawienie sciezki do aplikacji w bootstrap.php oraz application/libraries/Crud.php
+	   Dodatkowo mozliwosc zapisu do plikow:
+		/crud-kohana/application/cache/
+		/crud-kohana/application/logs/
+
+	b) Wymagane jest ustawienie bazy danych w application/config/database.php
+	c) to chyba tyle..
+
+	2. Struktura:
+
+	application/classes/
+		|	|		
+		|	|		
+		|	\-- controller/
+		|		\-- crud.php	< kontroler cruda
+		|	
+		\-- libraries/
+		|	\-- Crud.php	< klasa do tworzenia kontrolera modelu oraz widokow
+		|
+		\-- view/
+			\-- generator_checkform.php	\	
+			\-- generator_generateform.php	 > szablony generatora
+			\-- index.php			/
+			\-- index_template.php		< szablon 'index.php' dla stworzonego kontrolera
+		
+		
+	system/media/admin/js
+			|
+			|
+			\-- jquery-1.5.1.min.js
+			\-- jquery-ui.min.js
+			\-- jquery-crud.js
+
+	3. Have fun.. ;>
