@@ -20,8 +20,11 @@ requirements:
 	   Dodatkowo mozliwosc zapisu do plikow:
 		/crud-kohana/application/cache/
 		/crud-kohana/application/logs/
-
-	b) Wymagane jest ustawienie bazy danych w application/config/database.php
+	  Wymagane jest ustawienie bazy danych w application/config/database.php	
+	  Jesli aplikacja nie tworyla by nowych plikow nalezy sprawdzic uprawnienia do zapisu do katalogow
+		application/views/admin
+		application/classes/controller/admin
+		
 	c) to chyba tyle..
 
 	2. Struktura:
